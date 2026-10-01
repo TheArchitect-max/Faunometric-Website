@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620" role="img" aria-labelledby="title desc">
+  <title id="title">Faunometric signal concept visual</title>
+  <desc id="desc">An original abstract composition of waveform traces, acoustic rings, and evidence nodes.</desc>
+  <defs>
+    <radialGradient id="amberGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#f1c58e" stop-opacity=".65"/>
+      <stop offset=".36" stop-color="#d89b57" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#d89b57" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="tealGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#9bcac6" stop-opacity=".35"/>
+      <stop offset=".42" stop-color="#5fa7a2" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#5fa7a2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="signal" x1="40" y1="0" x2="715" y2="0">
+      <stop offset="0" stop-color="#5f6965" stop-opacity=".18"/>
+      <stop offset=".28" stop-color="#d89b57"/>
+      <stop offset=".58" stop-color="#f1c58e"/>
+      <stop offset="1" stop-color="#5fa7a2" stop-opacity=".38"/>
+    </linearGradient>
+    <linearGradient id="signalSoft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d89b57" stop-opacity=".52"/>
+      <stop offset="1" stop-color="#5fa7a2" stop-opacity=".08"/>
+    </linearGradient>
+    <filter id="blur28"><feGaussianBlur stdDeviation="28"/></filter>
+    <filter id="blur12"><feGaussianBlur stdDeviation="12"/></filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="760" height="620" rx="32" fill="#0b0f11"/>
+  <circle cx="515" cy="182" r="170" fill="url(#tealGlow)" filter="url(#blur12)"/>
+  <circle cx="282" cy="318" r="214" fill="url(#amberGlow)" filter="url(#blur28)"/>
+
+  <g opacity=".18" stroke="#d6ddd9" stroke-width="1">
+    <path d="M90 92H670M90 154H670M90 216H670M90 278H670M90 340H670M90 402H670M90 464H670M90 526H670"/>
+    <path d="M114 70V548M194 70V548M274 70V548M354 70V548M434 70V548M514 70V548M594 70V548M674 70V548"/>
+  </g>
+
+  <g fill="none" stroke="#5fa7a2" opacity=".18">
+    <circle cx="520" cy="232" r="72"/>
+    <circle cx="520" cy="232" r="112"/>
+    <circle cx="520" cy="232" r="154"/>
+  </g>
+
+  <g fill="none" stroke="url(#signal)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M72 315 C100 315 108 308 126 308 C145 308 149 353 169 353 C193 353 199 224 221 224 C244 224 249 391 272 391 C294 391 304 271 325 271 C349 271 351 339 377 339 C402 339 408 294 432 294 C455 294 464 319 486 319 C511 319 516 282 541 282 C568 282 570 330 598 330 C622 330 626 310 648 310 C671 310 681 315 696 315" stroke-width="5" filter="url(#glow)"/>
+    <path d="M74 370 C115 370 124 361 145 361 C168 361 176 412 199 412 C224 412 230 342 255 342 C280 342 288 384 313 384 C338 384 347 347 372 347 C395 347 404 374 429 374 C455 374 463 353 489 353 C514 353 521 383 548 383 C573 383 581 364 607 364 C632 364 640 370 690 370" stroke-width="2" opacity=".5"/>
+    <path d="M78 253 C113 253 127 249 145 249 C169 249 172 281 195 281 C217 281 223 242 246 242 C270 242 276 265 299 265 C322 265 331 247 354 247 C378 247 383 259 408 259 C432 259 438 246 462 246 C486 246 493 263 516 263 C541 263 548 251 571 251 C595 251 607 255 689 255" stroke-width="1.6" opacity=".42"/>
+  </g>
+
+  <g>
+    <circle cx="221" cy="224" r="6" fill="#f1c58e"/>
+    <circle cx="221" cy="224" r="15" fill="#d89b57" opacity=".12"/>
+    <circle cx="377" cy="339" r="5" fill="#e8d5b9"/>
+    <circle cx="377" cy="339" r="15" fill="#e8d5b9" opacity=".09"/>
+    <circle cx="541" cy="282" r="6" fill="#9bcac6"/>
+    <circle cx="541" cy="282" r="16" fill="#5fa7a2" opacity=".12"/>
+  </g>
+
+  <g fill="none" stroke="url(#signalSoft)" stroke-width="1">
+    <path d="M221 224L377 339L541 282"/>
+    <path d="M221 224L304 151L520 232" opacity=".42"/>
+    <path d="M377 339L458 456L617 428" opacity=".34"/>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1.4" fill="#9aa49f">
+    <text x="94" y="106">OBSERVATION</text>
+    <text x="558" y="118" fill="#79aaa7">ACOUSTIC FIELD</text>
+    <text x="94" y="518" fill="#b88957">EVIDENCE TRACE</text>
+  </g>
+
+  <g transform="translate(92 440)">
+    <rect width="188" height="48" rx="12" fill="#111719" stroke="#d89b57" stroke-opacity=".22"/>
+    <circle cx="24" cy="24" r="4" fill="#d89b57"/>
+    <rect x="42" y="15" width="96" height="5" rx="2.5" fill="#c8d0cc" opacity=".48"/>
+    <rect x="42" y="28" width="124" height="4" rx="2" fill="#7f8985" opacity=".25"/>
+  </g>
+
+  <g transform="translate(480 424)">
+    <rect width="174" height="64" rx="14" fill="#111719" stroke="#5fa7a2" stroke-opacity=".22"/>
+    <rect x="18" y="17" width="10" height="30" rx="3" fill="#5fa7a2" opacity=".5"/>
+    <rect x="35" y="25" width="10" height="22" rx="3" fill="#5fa7a2" opacity=".32"/>
+    <rect x="52" y="12" width="10" height="35" rx="3" fill="#d89b57" opacity=".58"/>
+    <rect x="78" y="18" width="70" height="5" rx="2.5" fill="#c8d0cc" opacity=".4"/>
+    <rect x="78" y="31" width="52" height="4" rx="2" fill="#7f8985" opacity=".26"/>
+  </g>
+
+  <rect x="1" y="1" width="758" height="618" rx="31" fill="none" stroke="#ffffff" stroke-opacity=".07"/>
+</svg>
